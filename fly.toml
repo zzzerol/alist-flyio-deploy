@@ -1,5 +1,5 @@
-app = "change-this-app-name"
-primary_region = "hkg" #https://fly.io/docs/reference/regions/
+app = "alistfile"
+primary_region = "lax" #https://fly.io/docs/reference/regions/
 
 [build]
 
@@ -7,7 +7,7 @@ primary_region = "hkg" #https://fly.io/docs/reference/regions/
   PORT = "5244"
 
 [[mounts]]
-  source = "change-this-storage-name" #https://fly.io/docs/apps/volume-storage/
+  source = "data" #https://fly.io/docs/apps/volume-storage/
   destination = "/opt/alist/data"
 
 [http_service]
